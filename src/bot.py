@@ -69,7 +69,7 @@ class MirrorBot(Bot):
         if len(packet.players) == 2 and self.team != packet.players[1 - self.index].team:
             target_index = 1 - self.index
             mirror_matrix = mirror_y
-            impossible_ball = True
+            impossible_ball = False
 
         else:
             # find a car on own team that is not a mirror bot
